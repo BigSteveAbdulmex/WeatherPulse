@@ -49,6 +49,7 @@ app.*.map.json
 .dart_tool/
 .metadata
 build/
+test/
 
 # IDE-specific files
 .idea/
