@@ -38,7 +38,7 @@ Weather Pulse is a mobile application built with Flutter that provides real-time
 1.  **Clone the repository:**
 
     ```bash
-    git clone [your-repository-url]
+    git clone https://github.com/BigSteveAbdulmex/WeatherPulse.git
     cd Weather-Pulse
     ```
 
