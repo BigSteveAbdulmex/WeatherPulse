@@ -14,8 +14,6 @@ Weather Pulse is a mobile application built with Flutter that provides real-time
 
 ## Screenshots
 
-*(Add screenshots of your app here. For example:)*
-
 <p align="center">
   <img src="path/to/screenshot1.png" width="300" alt="Weather Pulse - Main Screen">
   <img src="path/to/screenshot2.png" width="300" alt="Weather Pulse - Details Screen">
