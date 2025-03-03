@@ -14,9 +14,9 @@ Weather Pulse is a mobile application built with Flutter that provides real-time
 
 ## Screenshots
 
-<p align="center">
-  <img src="path/to/screenshot1.png" width="300" alt="Weather Pulse - Main Screen">
-  <img src="path/to/screenshot2.png" width="300" alt="Weather Pulse - Details Screen">
+<p>
+    ![Image Alt](https://github.com/BigSteveAbdulmex/WeatherPulse/blob/3b9835c47ec1c9b25cff112e5dab5fb28a5620f2/assets/images/screen1.png)
+    ![Image Alt](https://github.com/BigSteveAbdulmex/WeatherPulse/blob/3b9835c47ec1c9b25cff112e5dab5fb28a5620f2/assets/images/screen2.png)
 </p>
 
 ## Technologies Used
