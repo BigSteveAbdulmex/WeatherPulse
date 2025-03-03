@@ -76,13 +76,13 @@ class HomeScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      '📍 Alix-en-Provence',
+                      '📍 Hello, Steve',
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w300,
                       ),
                     ),
-                    const SizedBox(height: 8),
+                    const SizedBox(height: 5),
                     Text(
                       'Good morning',
                       style: TextStyle(
