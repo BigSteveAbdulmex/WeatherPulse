@@ -76,7 +76,7 @@ class HomeScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Alix-en-Provence',
+                      '📍 Alix-en-Provence',
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w300,
@@ -90,6 +90,45 @@ class HomeScreen extends StatelessWidget {
                         fontSize: 25,
                         fontWeight: FontWeight.bold,
                       ),
+                    ),
+                    Image.asset(
+                      'assets/images/1.png',
+                    ),
+                    const Center(
+                      child: Text(
+                        '21°C',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 55,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                    const Center(
+                      child: Text(
+                        'THUNDERSTORM',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 25,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 5),
+                    const Center(
+                      child: Text(
+                        'Mon 03 . 21:25',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w300,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 30),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [],
                     ),
                   ],
                 ),
