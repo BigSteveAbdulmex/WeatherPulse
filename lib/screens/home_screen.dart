@@ -73,6 +73,7 @@ class HomeScreen extends StatelessWidget {
                 width: MediaQuery.of(context).size.width,
                 height: MediaQuery.of(context).size.height,
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       'Alix-en-Provence',
@@ -80,7 +81,16 @@ class HomeScreen extends StatelessWidget {
                         color: Colors.white,
                         fontWeight: FontWeight.w300,
                       ),
-                    )
+                    ),
+                    const SizedBox(height: 8),
+                    Text(
+                      'Good morning',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ],
                 ),
               ),
