@@ -191,10 +191,10 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                     // Divider
-                    const Padding(
+                    Padding(
                       padding: EdgeInsets.symmetric(vertical: 5.0),
                       child: Divider(
-                        color: Colors.grey,
+                        color: Colors.grey[800],
                       ),
                     ),
                     // Second set of rows
