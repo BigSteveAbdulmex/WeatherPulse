@@ -7,6 +7,7 @@ import 'package:weatherpulse/bloc/weather_bloc.dart';
 import 'package:weatherpulse/screens/home_screen.dart';
 
 void main() {
+  // WidgetsFlutterBinding.ensureInitialized();
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
