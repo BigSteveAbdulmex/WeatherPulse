@@ -1,40 +1,38 @@
 import 'package:flutter/material.dart';
-
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:geolocator/geolocator.dart';
-
 import 'package:weatherpulse/bloc/weather_bloc.dart';
 import 'package:weatherpulse/screens/home_screen.dart';
+import 'package:geolocator/geolocator.dart';
 
 void main() {
-  // WidgetsFlutterBinding.ensureInitialized();
-  runApp(
-    MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: FutureBuilder(
-        future: _determinePosition(),
-        builder: (context, snap) {
-          if (snap.hasData) {
-            return BlocProvider<WeatherBloc>(
-              create: (context) => WeatherBloc()
-                ..add(
-                  FetchWeather(
-                    snap.data as Position,
+  runApp(const MainApp());
+}
+
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: FutureBuilder(
+            future: _determinePosition(),
+            builder: (context, snap) {
+              if (snap.hasData) {
+                return BlocProvider<WeatherBloc>(
+                  create: (context) =>
+                      WeatherBloc()..add(FetchWeather(snap.data as Position)),
+                  child: const HomeScreen(),
+                );
+              } else {
+                return const Scaffold(
+                  body: Center(
+                    child: CircularProgressIndicator(),
                   ),
-                ),
-              child: HomeScreen(),
-            );
-          } else {
-            return const Scaffold(
-              body: Center(
-                child: CircularProgressIndicator(),
-              ),
-            );
-          }
-        },
-      ),
-    ),
-  );
+                );
+              }
+            }));
+  }
 }
 
 /// Determine the current position of the device.
