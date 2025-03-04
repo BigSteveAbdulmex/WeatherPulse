@@ -331,9 +331,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               );
             } else {
-              return const Center(
-                child: Text("Loading......"),
-              );
+              return Container();
             }
           },
         ),
